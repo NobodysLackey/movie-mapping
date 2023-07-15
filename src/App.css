@@ -1,0 +1,201 @@
+body {
+  margin: 0;
+  font-family: 'Zen Old Mincho', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: rgb(40, 40, 40);
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-bar {
+  display: flex;
+  width: 99vw;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title-bar > div {
+  height: 50px;
+  width: 5vw;
+}
+
+.title-bar > button {
+  font-family: 'Zen Old Mincho', serif;
+  height: 50px;
+  width: 5vw;
+  color: white;
+  background-color: grey;
+  border: 3px solid black;
+  border-radius: 15px;
+  font-weight: bolder;
+}
+
+.title-bar > button:hover {
+  cursor: pointer;
+  background-color: rgb(187, 0, 0);
+  border: 3px dotted rgb(253, 240, 169);
+  color: rgb(253, 240, 169);
+}
+
+.title {
+  font-family: 'Codystar', cursive;
+  color: rgb(253, 240, 169);
+  font-weight: bold;
+  font-size: 4vh;
+  border: 6px dotted rgb(253, 240, 169);
+  border-radius: 15px;
+  padding: 0px 25px 0px 25px;
+  background-color: rgb(187, 0, 0);
+}
+
+.genres {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.poster {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  background-color: grey;
+  width: 25vw;
+  padding: 20px;
+  border: 6px solid black;
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px rgb(26, 26, 26);
+  
+  margin: 20px;
+  color: white;
+}
+
+.poster:hover {
+  background-color: rgb(162, 162, 162);
+  color: black;
+  border: 6px dotted rgb(253, 240, 169);
+}
+
+.genre {
+  width: 150px;
+  height: 2vh;
+  margin: 2px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+  font-size: 1.1vh;
+  
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.genre:hover {
+  box-shadow: 5px 5px 2.5px rgb(121, 121, 121);
+}
+
+.poster > img {
+  height: 638px;
+  width: 425px;
+  border: 3px solid black;
+  border-radius: 15px;
+  cursor: zoom-in;
+}
+
+.movie-title {
+  font-size: 2.5rem;
+}
+
+.movie-date {
+  font-size: 1.35rem;
+}
+
+.movie-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.overview {
+  height: 638px;
+  width: 425px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 3px solid black;
+  border-radius: 15px;
+
+  background-color: lightgray;
+  color: black;
+}
+
+.overview > img {
+  width: 100%;
+  height: auto;
+  border: none;
+  border-radius: 11px 11px 0px 0px;
+  border-bottom: 3px solid black;
+  cursor: pointer;
+}
+
+.overview > div {
+  font-size: 1.5rem;
+  padding: 1vw;
+  overflow: auto;
+  height: 100%;
+  background-color: rgb(234, 234, 234);
+  border-bottom: 3px solid black;
+}
+
+.overview > div::-webkit-scrollbar {
+  width: 10px;
+}
+
+.overview > div::-webkit-scrollbar-track {
+  background: lightgray;
+}
+
+.overview > div::-webkit-scrollbar-thumb {
+  background: rgb(187, 0, 0);
+  border-radius: 10px;
+}
+
+.overview > div::-webkit-scrollbar-thumb:hover {
+  background: rgb(253, 240, 169);
+}
+
+.overview > button {
+  cursor: pointer;
+  height: 2vh;
+  width: 150px;
+  font-family: 'Zen Old Mincho', serif;
+  font-weight: bold;
+  font-size: 1.1vh;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: rgb(182, 182, 182);
+
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.overview > button:hover {
+  box-shadow: 5px 5px 2.5px darkgrey;
+  color: rgb(187, 0, 0);
+  border: 3px solid rgb(187, 0, 0);
+}
