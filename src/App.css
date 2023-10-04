@@ -71,7 +71,7 @@ body {
 
   background-color: grey;
   width: 25vw;
-  padding: 20px;
+  padding: 10px;
   border: 6px solid black;
   border-radius: 15px;
   box-shadow: 10px 10px 5px rgb(26, 26, 26);
@@ -107,19 +107,21 @@ body {
 }
 
 .poster > img {
-  height: 638px;
-  width: 425px;
+  width: 24vw;
+  height: auto;
   border: 3px solid black;
   border-radius: 15px;
   cursor: zoom-in;
 }
 
 .movie-title {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
+  margin: 5px;
 }
 
 .movie-date {
-  font-size: 1.35rem;
+  font-size: 0.75rem;
+  margin: 5px;
 }
 
 .movie-grid {
@@ -129,8 +131,10 @@ body {
 }
 
 .overview {
-  height: 638px;
-  width: 425px;
+  width: 25vw;
+  max-width: 25vw;
+  min-height: 38.5vh;
+  max-height: 38.5vh;
 
   display: flex;
   flex-direction: column;
@@ -154,8 +158,8 @@ body {
 }
 
 .overview > div {
-  font-size: 1.5rem;
-  padding: 1vw;
+  font-size: .75rem;
+  padding: 5px;
   overflow: auto;
   height: 100%;
   background-color: rgb(234, 234, 234);
